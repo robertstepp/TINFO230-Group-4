@@ -1,12 +1,12 @@
 window.onload = function navigation() {
     this.document.getElementById("navigation").innerHTML = 
-        '<li id="home"><a href="home.html">Home</a></li>' + 
-        '<li id="services"><a href="services.html">Services</a></li>' + 
-        '<li id="pricing"><a href="pricing.html">Pricing</a></li>' + 
+        '<li id="home"><a href="home.html">Home</a></li>' +  
         '<li id="location"><a href="location.html">Location</a></li>' + 
+        '<li id="aboutUs"><a href="aboutus.html">About Us</a></li>' +
         '<li id="mission"><a href="mission.html">Mission</a></li>' + 
         '<li id="contactUs"><a href="contactus.html">Contact Us</a></li>' + 
-        '<li id="aboutUs"><a href="aboutus.html">About Us</a></li>';        
+        '<li id="services"><a href="services.html">Services/Pricing</a></li>';
+;        
         this.active();
 }
 

@@ -1,8 +1,27 @@
+
+navigation ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+}
+#navigation li {
+    float: left;
+    padding: 5px 10px;
+    border:2px black solid;
+    background: gold;
+}
+#navigation li a {
+    display: block;
+    text-align: center;
+}
 #active a {
     /* Used to style the active button anchor */
     color: red;
 }
 #active {
     /* Used to style the active button */
-    border: 2px blue solid;
+    border: 2px white solid !important;
+    background-color: green !important;
 }
