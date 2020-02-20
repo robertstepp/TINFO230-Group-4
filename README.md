@@ -8,4 +8,4 @@ Robert Stepp
 Michael Jerick Wayong
 
 -- Purpose --
-Website for a fake web desing company. Showcases off our individual projects as product history.
+Website for a fake web design company. Showcases off our individual projects as product history.
