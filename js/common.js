@@ -15,27 +15,21 @@ function active() {
     switch (theLocation) {
         case "home":
             document.getElementsByClassName("home")[0].setAttribute("id", "active");
-            document.getElementsByClassName("home")[1].setAttribute("id", "active");
             break;
         case "products":
             document.getElementsByClassName("products")[0].setAttribute("id", "active");
-            document.getElementsByClassName("products")[1].setAttribute("id", "active");
             break;
         case "location":
             document.getElementsByClassName("location")[0].setAttribute("id", "active");
-            document.getElementsByClassName("location")[1].setAttribute("id", "active");
             break;
         case "mission":
             document.getElementsByClassName("mission")[0].setAttribute("id", "active");
-            document.getElementsByClassName("mission")[1].setAttribute("id", "active");
             break;
         case "contactUs":
             document.getElementsByClassName("contactUs")[0].setAttribute("id", "active");
-            document.getElementsByClassName("contactUs")[1].setAttribute("id", "active");
             break;
         case "aboutUs":
             document.getElementsByClassName("aboutUs")[0].setAttribute("id", "active");
-            document.getElementsByClassName("aboutUs")[1].setAttribute("id", "active");
             break;
     }
 }
