@@ -1,5 +1,6 @@
 #active a {
     /* Used to style the active button anchor */
+    color: red;
 }
 #active {
     /* Used to style the active button */
