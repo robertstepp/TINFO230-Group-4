@@ -1,11 +1,12 @@
 window.onload = function navigation() {
     this.document.getElementById("navigation").innerHTML = 
-        '<li class="home"><a href="home.html" class="home">Home</a></li>' + 
-        '<li class="products"><a href="products.html" class="products">Products</a></li>' + 
-        '<li class="location"><a href="location.html" class="location">Location</a></li>' + 
-        '<li class="mission"><a href="mission.html" class="mission">Mission</a></li>' + 
-        '<li class="contactUs"><a href="contactus.html" class="contactUs">Contact Us</a></li>' + 
-        '<li class="aboutUs"><a href="aboutus.html" class="aboutUs">About Us</a></li>';        
+        '<li id="home"><a href="home.html">Home</a></li>' + 
+        '<li id="services"><a href="services.html">Services</a></li>' + 
+        '<li id="pricing"><a href="pricing.html">Pricing</a></li>' + 
+        '<li id="location"><a href="location.html">Location</a></li>' + 
+        '<li id="mission"><a href="mission.html">Mission</a></li>' + 
+        '<li id="contactUs"><a href="contactus.html">Contact Us</a></li>' + 
+        '<li id="aboutUs"><a href="aboutus.html">About Us</a></li>';        
         this.active();
 }
 
@@ -14,22 +15,25 @@ function active() {
     var theLocation = location.href.split("/").slice(-1)[0].split(".")[0]; // https://stackoverflow.com/questions/16611497/how-can-i-get-the-name-of-an-html-page-in-javascript
     switch (theLocation) {
         case "home":
-            document.getElementsByClassName("home")[0].setAttribute("id", "active");
+            document.getElementById("home").setAttribute("id", "active");
             break;
-        case "products":
-            document.getElementsByClassName("products")[0].setAttribute("id", "active");
+        case "services":
+            document.getElementById("services").setAttribute("id", "active");
+            break;
+        case "pricing":
+            document.getElementById("pricing").setAttribute("id", "active");
             break;
         case "location":
-            document.getElementsByClassName("location")[0].setAttribute("id", "active");
+            document.getElementById("location").setAttribute("id", "active");
             break;
         case "mission":
-            document.getElementsByClassName("mission")[0].setAttribute("id", "active");
+            document.getElementById("mission").setAttribute("id", "active");
             break;
         case "contactUs":
-            document.getElementsByClassName("contactUs")[0].setAttribute("id", "active");
+            document.getElementById("contactUs").setAttribute("id", "active");
             break;
         case "aboutUs":
-            document.getElementsByClassName("aboutUs")[0].setAttribute("id", "active");
+            document.getElementById("aboutUs").setAttribute("id", "active");
             break;
     }
 }
