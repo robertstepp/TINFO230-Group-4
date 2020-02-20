@@ -29,10 +29,10 @@ function active() {
         case "mission":
             document.getElementById("mission").setAttribute("id", "active");
             break;
-        case "contactUs":
+        case "contactus":
             document.getElementById("contactUs").setAttribute("id", "active");
             break;
-        case "aboutUs":
+        case "aboutus":
             document.getElementById("aboutUs").setAttribute("id", "active");
             break;
     }
