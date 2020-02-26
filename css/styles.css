@@ -1,14 +1,6 @@
 html {
   font-family: sans-serif;
-}
-
-html {
-    background-color: black;
-}
-body {
-    background-color: white;
-    width: 90%;
-    margin: 0 auto;
+  background-color: lightgray;
 }
 
 navigation ul{
@@ -16,13 +8,18 @@ navigation ul{
     overflow: hidden;
 }
 #navigation li {
+  display: block;
     float: left;
     padding: 5px 20px;
 }
 ul a {
-  color: gray;
+  color: black;
 }
 
 ul a:hover {
-  color: black;
+  color: white;
+}
+
+#name {
+  float: right;
 }

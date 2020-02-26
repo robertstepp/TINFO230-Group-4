@@ -49,4 +49,3 @@ function footer() {
     `<img src="images/facebook.png" alt="Facebook" title="Facebook" height=29> <!-- This needs padding for clearance -->` +
     `&copy; 2020`;
 }
-}
