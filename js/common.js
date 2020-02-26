@@ -1,13 +1,14 @@
 window.onload = function navigation() {
-    this.document.getElementById("navigation").innerHTML = 
-        '<li id="home"><a href="home.html">Home</a></li>' +  
-        '<li id="location"><a href="location.html">Location</a></li>' + 
+    this.document.getElementById("navigation").innerHTML =
+        '<li id="home"><a href="home.html">Home</a></li>' +
+        '<li id="location"><a href="location.html">Location</a></li>' +
         '<li id="aboutUs"><a href="aboutus.html">About Us</a></li>' +
-        '<li id="mission"><a href="mission.html">Mission</a></li>' + 
-        '<li id="contactUs"><a href="contactus.html">Contact Us</a></li>' + 
+        '<li id="mission"><a href="mission.html">Mission</a></li>' +
+        '<li id="contactUs"><a href="contactus.html">Contact Us</a></li>' +
         '<li id="services"><a href="services.html">Services/Pricing</a></li>';
-;        
+;
         this.active();
+        this.footer();
 }
 
 function active() {
@@ -36,4 +37,14 @@ function active() {
             document.getElementById("aboutUs").setAttribute("id", "active");
             break;
     }
+}
+
+function footer() {
+    this.document.getElementById("footer").innerHTML =
+    `<hr>` +
+    '<!-- Source of Instagram: https://en.instagram-brand.com/assets/icons -->' +
+    `<img src="images/instagram.png" alt="Instagram" title="Instagram" height=29> <!-- This needs padding for clearance -->` +
+    `<!-- Source of Facebook: https://en.facebookbrand.com/facebookapp/ -->` +
+    `<img src="images/facebook.png" alt="Facebook" title="Facebook" height=29> <!-- This needs padding for clearance -->` +
+    `&copy; 2020`;
 }
