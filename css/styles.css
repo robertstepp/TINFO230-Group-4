@@ -1,16 +1,16 @@
-html {
-  font-family: sans-serif;
+* {
+  font-family: "Helvetica";
   background-color: lightgray;
 }
+
 
 navigation ul{
     list-style:none;
     overflow: hidden;
 }
 #navigation li {
-  display: block;
-    float: left;
-    padding: 5px 20px;
+    float: right;
+    padding: 10px 30px;
 }
 ul a {
   color: black;
@@ -21,5 +21,13 @@ ul a:hover {
 }
 
 #name {
-  float: right;
+  position: absolute;
+  top: 6%;
+  left: 5%;
+}
+
+#mainArea {
+  position: absolute;
+  top: 200px;
+  line-height: 4em;
 }
