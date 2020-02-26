@@ -1,6 +1,14 @@
-
 html {
   font-family: sans-serif;
+}
+
+html {
+    background-color: black;
+}
+body {
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
 }
 
 navigation ul{
