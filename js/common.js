@@ -20,9 +20,6 @@ function active() {
         case "services":
             document.getElementById("services").setAttribute("id", "active");
             break;
-        case "pricing":
-            document.getElementById("pricing").setAttribute("id", "active");
-            break;
         case "location":
             document.getElementById("location").setAttribute("id", "active");
             break;
