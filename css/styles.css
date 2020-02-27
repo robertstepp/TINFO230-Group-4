@@ -2,7 +2,9 @@
   font-family: "Helvetica";
   background-color: lightgray;
 }
-
+#footer {
+  text-align: center;
+}
 
 navigation ul{
     list-style:none;
