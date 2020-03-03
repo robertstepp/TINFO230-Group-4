@@ -1,47 +1,69 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf=8">
-        <meta name="author" content="Reyna Bueno">
-        <meta name="author" content="Joseph Dayonot">
-        <meta name="author" content="Ian Lindell">
-        <meta name="author" content="Robert Stepp">
-        <meta name="author" content="Michael Jerick Wayong">
-        <title>Location</title>
-        <script src="js/common.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <style>
-                  html, body {
-                    height: 100%;
-                    margin: 0;
-                    padding: 0;
-                }
 
-            #map {
-                height: 50%;
-                width: 50%
-            }
+<head>
+  <meta charset="utf=8">
+  <meta name="author" content="Reyna Bueno">
+  <meta name="author" content="Joseph Dayonot">
+  <meta name="author" content="Ian Lindell">
+  <meta name="author" content="Robert Stepp">
+  <meta name="author" content="Michael Jerick Wayong">
+  <title>Location</title>
+  <script src="js/common.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
 
-        </style>
-        </head>
-    <body>
-        <navigation>
-            <ul id="navigation">                
-            </ul>
-        </navigation>
-        <div id="map"></div>
-        <script>
-            var map;
-            function initMap() {
-              map = new google.maps.Map(document.getElementById('map'), {
-                center: {lat: 47.2466359, lng: -122.4389472},
-                zoom: 18
-              });
-            }
-          </script>
-          <script src="https://maps.googleapis.com/maps/api/js?key={API_KEY}&callback=initMap"
-          async defer></script>
-      
-        <footer id="footer"></footer>
-    </body>
+    #map {
+      height: 50%;
+      width: 50%;
+      border: 2px black solid;
+    }
+  </style>
+</head>
+
+<body>
+  <navigation>
+    <ul id="navigation">
+    </ul>
+  </navigation>
+  <div id="map"></div>
+  <script>
+    var map;
+    var lat = 47.2462786;
+    var lng = -122.4375005;
+
+    // https://stackoverflow.com/questions/15925980/using-address-instead-of-longitude-and-latitude-with-google-maps-api
+    function initMap() {
+      var mapOptions = {
+        center: new google.maps.LatLng(lat, lng),
+        zoom: 18,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+      var map = new google.maps.Map(document.getElementById("map"),
+        mapOptions);
+
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(lat, lng),
+        map: map,
+        title: "Russel T. Joy Building"
+      });
+    };
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key={API_KEY}&callback=initMap"
+    async defer></script>
+  <div id="location">
+    <h3>Russel T. Joy Building</h3>
+    <address>1900 Commerce St.<br>Tacoma, WA 98402</address>
+    </p>
+  </div>
+
+  <footer id="footer"></footer>
+</body>
+
 </html>
