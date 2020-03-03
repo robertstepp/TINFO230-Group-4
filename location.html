@@ -15,14 +15,39 @@
     html,
     body {
       height: 100%;
-      margin: 0;
+      margin: 0 auto;
       padding: 0;
+      width: 90%
     }
 
     #map {
       height: 50%;
       width: 50%;
       border: 2px black solid;
+      margin: 25px 10px;
+    }
+
+    #info {
+      width: 250px;
+      text-align: right;
+      position: relative;
+      left: 60%;
+      top: -50%;
+    }
+
+    #contactus {
+      margin: 15px 0;
+      border: none;
+      width: 150px;
+      height: 1.9em;
+      font-size: 1.5em;
+      background-color: white;
+      border-radius: 10px;
+      color: black;
+    }
+
+    #contactus :visited {
+      color: black;
     }
   </style>
 </head>
@@ -51,16 +76,29 @@
       var marker = new google.maps.Marker({
         position: new google.maps.LatLng(lat, lng),
         map: map,
-        title: "Russel T. Joy Building"
+        title: "Russell T. Joy Building"
       });
     };
   </script>
   <script src="https://maps.googleapis.com/maps/api/js?key={API_KEY}&callback=initMap"
     async defer></script>
-  <div id="location">
-    <h3>Russel T. Joy Building</h3>
+  <div id="info">
+    <h3>Russell T. Joy Building</h3>
     <address>1900 Commerce St.<br>Tacoma, WA 98402</address>
     </p>
+    <hr>
+    <table>
+      <tr>
+        <th width=150>Monday-Friday</th>
+        <td width=120 style="text-align: left">7 am to 5 pm</td>
+      </tr>
+      <tr>
+        <th>Saturday/Sunday</th>
+        <td style="text-align: left">Closed</td>
+      </tr>
+    </table>
+    <hr>
+    <button id="contactus"><a href="contactus.html">Contact Us</a></button>
   </div>
 
   <footer id="footer"></footer>
