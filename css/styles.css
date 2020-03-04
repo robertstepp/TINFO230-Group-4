@@ -1,8 +1,12 @@
 html {
   font-family: "Helvetica";
+}
+html {  
   background-color: lightgray;
 }
-
+#footer {
+  text-align: center;
+}
 
 navigation ul{
     list-style:none;
@@ -30,6 +34,7 @@ ul a:hover {
   position: absolute;
   top: 200px;
   line-height: 4em;
+
 }
 
 #pageHead {

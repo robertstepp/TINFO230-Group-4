@@ -1,12 +1,11 @@
 window.onload = function navigation() {
-    this.document.getElementById("navigation").innerHTML =
-        '<li id="home"><a href="home.html">Home</a></li>' +
-        '<li id="location"><a href="location.html">Location</a></li>' +
-        '<li id="aboutUs"><a href="aboutus.html">About Us</a></li>' +
-        '<li id="mission"><a href="mission.html">Mission</a></li>' +
+    this.document.getElementById("navigation").innerHTML =       
+        '<li id="services"><a href="services.html">Services/Pricing</a></li>' +
         '<li id="contactUs"><a href="contactus.html">Contact Us</a></li>' +
-        '<li id="services"><a href="services.html">Services/Pricing</a></li>';
-;
+        '<li id="mission"><a href="mission.html">Mission</a></li>' +
+        '<li id="aboutUs"><a href="aboutus.html">About Us</a></li>' +
+        '<li id="location"><a href="location.html">Location</a></li>' +
+        '<li id="home"><a href="home.html">Home</a></li>';
         this.active();
         this.footer();
 }
@@ -20,9 +19,6 @@ function active() {
             break;
         case "services":
             document.getElementById("services").setAttribute("id", "active");
-            break;
-        case "pricing":
-            document.getElementById("pricing").setAttribute("id", "active");
             break;
         case "location":
             document.getElementById("location").setAttribute("id", "active");
@@ -40,9 +36,7 @@ function active() {
 }
 
 function footer() {
-    this.document.getElementById("footer").innerHTML =
-    this.document.getElementById("footer").innerHTML =
-    `<hr>` +
+    this.document.getElementById("footer").innerHTML = `<hr>` +
     '<!-- Source of Instagram: https://en.instagram-brand.com/assets/icons -->' +
     `<img src="images/instagram.png" alt="Instagram" title="Instagram" height=29> <!-- This needs padding for clearance -->` +
     `<!-- Source of Facebook: https://en.facebookbrand.com/facebookapp/ -->` +
