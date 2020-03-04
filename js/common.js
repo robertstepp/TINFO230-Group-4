@@ -1,5 +1,5 @@
 window.onload = function navigation() {
-    this.document.getElementById("navigation").innerHTML =       
+    this.document.getElementById("navigation").innerHTML =
         '<li id="services"><a href="services.html">Services/Pricing</a></li>' +
         '<li id="contactUs"><a href="contactus.html">Contact Us</a></li>' +
         '<li id="mission"><a href="mission.html">Mission</a></li>' +
@@ -34,6 +34,32 @@ function active() {
             break;
     }
 }
+
+function checkForm() {
+  document.getElementById("formErrors").style.setProperty("display","block");
+
+document.getElementById("fullName").style.set
+
+
+var x = document.getElementById("fullName").innerHTML;
+if (x.length < 1) {
+    document.getElementById("name").style.setProperty("display","block");
+  }
+
+  var re = /[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,5}$/;
+  var x = document.getElementById("email");
+  if (!re.test(x)) {
+    document.getElementById("mail").style.setProperty("display","block");
+  }
+}
+
+document.getElementById("submit").addEventListener("click", function(event) {
+   checkForm();
+
+   // Prevent default form action. DO NOT REMOVE THIS LINE
+   event.preventDefault();
+});
+
 
 function footer() {
     this.document.getElementById("footer").innerHTML = `<hr>` +
