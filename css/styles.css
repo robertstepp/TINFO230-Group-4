@@ -1,4 +1,4 @@
-* {
+html {
   font-family: "Helvetica";
   background-color: lightgray;
 }
@@ -30,4 +30,14 @@ ul a:hover {
   position: absolute;
   top: 200px;
   line-height: 4em;
+}
+
+#pageHead {
+  text-align: center;
+  text-decoration: underline;
+}
+
+#pageText {
+  text-align: center;
+  font-size: 25px;
 }
