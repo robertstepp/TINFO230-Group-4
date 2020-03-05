@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
@@ -53,3 +53,133 @@
   </div>
     </body>
 </html>
+<!-- LAST EDIT - 3/5/2020
+-Added html script for slideshow
+-rearragned html (replaced main area with slideshow container
+-->
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Reyna Bueno">
+        <meta name="author" content="Joseph Dayonot">
+        <meta name="author" content="Ian Lindell">
+        <meta name="author" content="Robert Stepp">
+        <meta name="author" content="Michael Jerick Wayong">
+        <title>Home</title>
+        <script src="js/common.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+      
+        <!--re-edit when logo is done-->
+        <div id="name">
+            <h1><img src="images/uwLogo.png" alt="Logo" title="Logo" id="logo">Studios</h1>
+        </div>
+        
+        <nav> <!--was navigation-->
+          <ul id="navigation">
+          </ul>
+      </nav>
+
+<!--
+  <div id="mainArea">
+        <div id="topImage">
+            <img src="../TINFO230-Group-4-master/images/HOMEPAGE/header_websiteExample1.jpg" alt="Image" title="Image" id="tImage">
+        
+            <h1 id ="centerText">Your Website, Made Alive.</h1> 
+        </div>
+      
+-->
+      <!--            TEST AREA-->
+      <div id="mainArea">
+        <div class="slideshow-container">
+
+<div class="mySlides fade">
+    
+  <div class="numbertext">1 / 3</div>
+  <img class="slideImg" src="images/header_websiteExample1.jpg" style="width:100%" alt="Tacoma Art Website">
+  <div class="text">WEBSITE FEATURED: TACOMA ART</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img class="slideImg" src="images/header_websiteExample2.jpg" style="width:100%" alt="Papa Cho's Grill">
+  <div class="text">WEBSITE FEATURED: PAPA CHO'S GRILL</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img class="slideImg" src="images/header_websiteExample3.jpg" style="width:100%" alt="Mira's Makeup">
+  <div class="text" style="color: black">WEBSITE FEATURED: MIRA'S MAKEUP</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+      <!--            TEST AREA-->
+             
+
+
+        <div id="midContent">
+            .<img src="images/leftImage_websiteExample.jpg" alt="Right side image" title="Right side image" id="rsImage">
+            <h1>Your Website, Made Alive.</h1>
+            <p id="inBlock">Established in 2016, W Studios have created custom websites for aspiring artists, musicians, and professionals around the Pacific Northwest.</p>
+        </div>
+      
+        <div id="customers">
+            <h1>Our Customers</h1>
+        </div>
+        <div id="listCompanies">
+            <table class = "center">
+                <tr>
+                    <td>Northwest Design</td>
+                    <td>Tacoma Art</td>
+                </tr>
+                <tr>
+                    <td>Seattle Live</td>
+                    <td>Tiger Apparel</td>
+                </tr>
+                <tr>
+                    <td>Olympic Roasters</td>
+                    <td>The RustBucket</td>
+                </tr>
+            </table>
+        </div>
+
+        <footer id="footer"></footer>
+  </div>
+        <!--SCRIPT AREA-->
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
+
+<!--SCRIPT AREA-->
+    </body>
+    
+</html>
+
