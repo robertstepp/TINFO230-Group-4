@@ -63,9 +63,9 @@ document.getElementById("submit").addEventListener("click", function(event) {
 
 function footer() {
     this.document.getElementById("footer").innerHTML = `<hr>` +
-    '<!-- Source of Instagram: https://en.instagram-brand.com/assets/icons -->' +
+    /*'<!-- Source of Instagram: https://en.instagram-brand.com/assets/icons -->' +
     `<img src="images/instagram.png" alt="Instagram" title="Instagram" height=29> <!-- This needs padding for clearance -->` +
     `<!-- Source of Facebook: https://en.facebookbrand.com/facebookapp/ -->` +
-    `<img src="images/facebook.png" alt="Facebook" title="Facebook" height=29> <!-- This needs padding for clearance -->` +
+    `<img src="images/facebook.png" alt="Facebook" title="Facebook" height=29> <!-- This needs padding for clearance -->` + */
     `&copy; 2020`;
 }
